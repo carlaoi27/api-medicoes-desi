@@ -1,4 +1,4 @@
-// Regras de negócio: conversão °C -> °F e classificação da temperatura
+// Isso eu já sabia por causa das aulas do Felipe 👌
 
 function arredondar(valor) {
   return Math.round(valor * 100) / 100;
@@ -15,7 +15,7 @@ function classificarTemperatura(celsius) {
   } else if (celsius > 105) {
     return 'Limite crítico';
   } else if (celsius >= 95) {
-    return 'Acima da temperatura ideal'; // 95 a 105 (inclusive)
+    return 'Acima da temperatura ideal'; // 95 a 105
   }
   return 'Atencao / Intermediario'; // 80 a 94.99
 }

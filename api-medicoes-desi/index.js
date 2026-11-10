@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use(express.json());
 
-// Valida o corpo de POST/PUT. Retorna a mensagem de erro (string) ou null se estiver ok.
+// Valida o body do post e put
 function validarCorpo(body) {
   const { descricao, tipo, valor } = body || {};
 
@@ -123,7 +123,7 @@ app.delete('/medicao/:id', async (req, res) => {
   }
 });
 
-// Só sobe o servidor quando executado diretamente (permite importar o app nos testes)
+// Aviso
 if (require.main === module) {
   app.listen(port, () => {
     console.log(`API de medições rodando em http://localhost:${port}`);

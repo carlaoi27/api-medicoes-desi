@@ -1,7 +1,7 @@
 {
   "name": "api-medicoes-desi",
   "version": "1.0.0",
-  "description": "API RESTful de medições térmicas de hardware (Node.js, Express e MySQL)",
+  "description": "API de medições térmicas de hardware",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

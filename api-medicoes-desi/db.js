@@ -1,7 +1,7 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
-// Pool de conexões: as credenciais vêm do arquivo .env (nunca ficam no código)
+// Conexões
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
